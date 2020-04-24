@@ -93,6 +93,43 @@ CREATE TABLE `CES_INDICATOR` (
 	`Component` varchar(255) NOT NULL,
 	PRIMARY KEY (`Indicator`),
 	KEY `CES` (`Indicator`));
+	
+--
+-- Table structure for table 'COUNTY'
+--
+
+DROP TABLE IF EXISTS `COUNTY`;
+CREATE TABLE `COUNTY`(
+	`County_ID` int(10) NOT NULL,
+	`County_Name` varchar(255) NOT NULL,
+	PRIMARY KEY (`County_ID`));					
+
+--
+-- Table Structure for table 'CLIMATE_INVESTMENTS'
+--
+ 
+DROP TABLE IF EXISTS `CLIMATE_INVESTMENTS`;
+CREATE TABLE `CLIMATE_INVESTMENTS`(
+	`Project_ID`  varchar(255) NOT NULL,
+	`Project_Name` varchar(255) NOT NULL,
+	`Administering_Agency` varchar(255) default NULL,
+	`GGRF_Funds_Awarded` varchar(255) default NULL,
+	`GHG_Emission_Reductions` int(11) default NULL,
+	`Priority_Pop_Funds` varchar(255) default NULL,
+	`Year` varchar(255) NOT NULL,
+	PRIMARY KEY (`Project_ID`));
+
+--
+-- Table Structure for table 'CLIMATE_INVESTMENTS_GEO';
+--
+
+DROP TABLE IF EXISTS `CLIMATE_INVESTMENTS_GEO`;
+CREATE TABLE `CLIMATE_INVESTMENTS_GEO`(
+	`Project_ID` varchar(255) NOT NULL,
+	`Census_ID` varchar(255) NOT NULL,
+	PRIMARY KEY(`Census_ID`));
+
+
 
 --
 -- Load RACE data
@@ -159,7 +196,39 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 
+--
+--Load COUNTY 
+--
 
+LOAD DATA LOCAL INFILE 'County - Sheet1.csv' 
+INTO TABLE COUNTY
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"' 
+LINES TERMINATED BY '\n' 
+IGNORE 1 ROWS 
+(County_ID,County_Name);
 
+--
+--Load CLIMATE_INVESTMENTS
+--
+
+LOAD DATA LOCAL INFILE 'ClimateInvestments - ci_data-2.csv' 
+INTO TABLE CLIMATE_INVESTMENTS 
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"' 
+LINES TERMINATED BY '\n' 
+IGNORE 1 ROWS 
+(Project_ID,Project_Name,Administering_Agency,GGRF_Funds_Awarded,GHG_Emission_Reductions,Priority_Pop_Funds,Year);
+
+--
+--Load CLIMATE_INVESTMENTS_GEO
+--
+LOAD DATA LOCAL INFILE 'Climate_Investments_Geo - Sheet1.csv' 
+INTO TABLE CLIMATE_INVESTMENTS_GEO 
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"' 
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS 
+(Project_ID,Census_ID);
 
 
