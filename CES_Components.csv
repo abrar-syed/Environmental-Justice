@@ -1,0 +1,21 @@
+﻿Indicator,Description,Sub_Component,Componenet
+Ozone,"Mean of summer months (May-October) of the daily maximum 8-hour ozone concentration (ppm), averaged over three years (2012 to 2014).",Exposure,Pollution Burden
+PM2.5,Spatial distribution of gridded diesel PM emissions from on-road and non-road sources for a 2012 summer day in July (kg/day).,Exposure,Pollution Burden
+Diesel PM,"Total pounds of selected active pesticide ingredients (filtered for hazard and volatility) used in production-agriculture per square mile, averaged over three years (2012 to 2014).",Exposure,Pollution Burden
+Pesticides,"Total pounds of selected active pesticide ingredients (filtered for hazard and volatility) used in production-agriculture per square mile, averaged over three years (2012 to 2014).",Exposure,Pollution Burden
+Toxic Release,Toxicity-weighted concentrations of modeled chemical releases to air from facility emissions and off-site incineration (averaged over 2011 to 2013).,Exposure,Pollution Burden
+Traffic,Sum of traffic volumes adjusted by road segment length (vehicle-kilometers per hour) divided by total road length (kilometers) within 150 meters of the census tract boundary (2013).,Exposure,Pollution Burden
+Drinking Water,king water contaminant index for selected contaminants,Exposure,Pollution Burden
+Cleanup Sites,Sum of weighted sites within each census tract.,Environmental Effects,Pollution Burden
+Groundwater Threats,Sum of weighted scores for sites within each census tract.,Environmental Effects,Pollution Burden
+Hazardous Waste,Sum of weighted permitted hazardous waste facilities and hazardous waste generators within each census tract.,Environmental Effects,Pollution Burden
+Impaired Water Bodies,Summed number of pollutants across all water bodies designated as impaired within the area.,Environmental Effects,Pollution Burden
+Solid Waste,Sum of weighted solid waste sites and facilities.,Environmental Effects,Pollution Burden
+Asthma,"Spatially modeled, age-adjusted rate of emergency department (ED) visits for asthma per 10,000.",Sensitive Population,Population Characteristics
+Cardiovascular Disease,"Spatially modeled, age-adjusted rate of emergency department (ED) visits for AMI per 10,000.",Sensitive Population,Population Characteristics
+Low Birth Weight,Percent low birth weight,Sensitive Population,Population Characteristics
+Education,Percent of the population over age 25 with less than a high school education.,Socioeconomic Factors,Population Characteristics
+Housing Burden,Housing Burdened Low Income Households. Percent of households in a census tract that are both low income (making less than 80% of the HUD Area Median Family Income) and severely burdened by housing costs (paying greater than 50% of their income to housing costs).,Socioeconomic Factors,Population Characteristics
+Linguistic Isolation,Percent limited English-speaking households,Socioeconomic Factors,Population Characteristics
+Poverty,Percent of the population living below two times the federal poverty level,Socioeconomic Factors,Population Characteristics
+Unemployment,"Percent of the population over the age of 16 that is unemployed and eligible for the labor force. Excludes retirees, students, homemakers, institutionalized persons except prisoners, those not looking for work, and military personnel on active duty",Socioeconomic Factors,Population Characteristics
