@@ -3,6 +3,7 @@ Environmental Justice Database Management System
 
 ## Details:
 ca_cap_trade.sql -  SQL file containing create table commands and load data commands.
+
 webapp-ENV - folder containing the flask applications files.
 
 ## STEPS TO RUN
