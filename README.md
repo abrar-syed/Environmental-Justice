@@ -1,5 +1,5 @@
 # INFO-257-Final-Project
-Environmental Justice Database Management System
+Environmental Justice Database Management System.
 
 ## Details:
 ca_cap_trade.sql -  SQL file containing create table commands and load data commands.
@@ -13,13 +13,13 @@ webapp-ENV - folder containing the flask applications files.
 
 3. Now, clone this repository and put all the .csv files in path - '/Documents/Github/docker/datadir'
 
-4. Run the .sql file  excluding the 'LOAD DATA LOCAL INFILE..' statememts on Datagrip console to create schema of your database. Make sure that you are connected to docker at the point and the container is up and running. To start your container , type in terminal - docker start mariadb-diveshop where mariadb-diveshop is your container name.
+4. Run the .sql file  excluding the 'LOAD DATA LOCAL INFILE..' statememts on Datagrip console to create schema of your database. Make sure that you are connected to docker at the point and the container is up and running. To start your container ,type in terminal - docker start mariadb-diveshop where mariadb-diveshop is your container name.
 
 5. Now we need to load our data. So go to terminal and type 'docker exec -it mariadb-diveshop bash'
 
-    Then do 'cd home'
+Then do 'cd home'
   
-   Now type -  mysql -u root -p and it will prompt for a password . Enter the password which you set while making docker          container.
+Now type -  mysql -u root -p and it will prompt for a password . Enter the password which you set while making docker          container.
   
 6.You are successfully connected to MySQL Command Client . Type in the command 'use CA_CAP_TRADE;'
 
@@ -35,6 +35,6 @@ webapp-ENV - folder containing the flask applications files.
 
 12. Now go into terminal into the directory and type 'python app.py'
 
-    $ webapp-ENV> python app.py
+## $ webapp-ENV> python app.py
 
 13. The server should be up and running on localhost. Open it up on the browser and go ahead to test our app.
