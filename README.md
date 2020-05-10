@@ -1,12 +1,12 @@
-# Environmental Justice Database Management System.
+## Environmental Justice Database Management System
 
-## Details:
+### Details:
 
-##### ca_cap_trade.sql -  SQL file containing create table commands and LOAD DATA commands.
+* ca_cap_trade.sql : SQL file containing create table commands and LOAD DATA commands.
 
-##### webapp-ENV - Folder containing the flask application files.
+* webapp-ENV : Folder containing the flask application files.
 
-## STEPS TO RUN
+### STEPS TO RUN
 
 * Install docker, DataGrip and clone the https://github.com/munners17/INFO-257-Sp2020 repository.
 
@@ -39,6 +39,6 @@ with creating a container in docker and connecting it with your database on Data
 
 * Now go into terminal into the directory and type 'python app.py'
 
-#### $ Environmental-Justice-master/webapp-ENV> python app.py
+  #### $ Environmental-Justice-master/webapp-ENV> python app.py
 
 * The server should be up and running on localhost. Open it up on the browser and go ahead to test our app.
