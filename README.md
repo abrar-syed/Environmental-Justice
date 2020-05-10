@@ -1,12 +1,12 @@
-## Environmental Justice Database Management System
+## Envrionmental Justice
 
-### Details:
+## Details:
 
 * ca_cap_trade.sql : SQL file containing create table commands and LOAD DATA commands.
 
 * webapp-ENV : Folder containing the flask application files.
 
-### STEPS TO RUN
+## STEPS TO RUN
 
 * Install docker, DataGrip and clone the https://github.com/munners17/INFO-257-Sp2020 repository.
 
