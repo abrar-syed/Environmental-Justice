@@ -35,7 +35,7 @@ with creating a container in docker and connecting it with your database on Data
 * Copy these statements onto the MySQL Command Client and run it one by one for each table.
   * `MariaDB[CA_CAP_TRADE]> LOAD DATA LOCAL INFILE ....`
 
-* You must have now loaded all the data .
+* You must have now loaded all the data and you can see on Datagrip.
 
 * Now open the `app.py` file and change the password field to your password for docker container.
 
