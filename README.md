@@ -1,4 +1,4 @@
-## Envrionmental Justice
+## Envrionmental Justice Project
 
 ## Details:
 
