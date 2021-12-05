@@ -43,3 +43,5 @@ with creating a container in docker and connecting it with your database on Data
   * `$ Environmental-Justice-master/webapp-ENV> python app.py`
 
 * The server should be up and running on localhost. Open it up on the browser and go ahead to test our app.
+
+* Video Demo Link : https://drive.google.com/file/d/1I1HnGMriJ9qD_gNeHJK_yZs2Xzn-Xcoy/view?usp=sharing
